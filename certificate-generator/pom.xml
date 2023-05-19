@@ -46,6 +46,15 @@
 			<version>3.0-beta-4</version>
 		</dependency>
 
+
+		<!-- https://mvnrepository.com/artifact/org.jodconverter/jodconverter-core -->
+		<!--<dependency>
+			<groupId>org.jodconverter</groupId>
+			<artifactId>jodconverter-core</artifactId>
+			<version>4.4.6</version>
+		</dependency>-->
+
+
 		<!-- openoffice -->
 		<dependency>
 			<groupId>org.openoffice</groupId>
@@ -71,12 +80,20 @@
 		</dependency>
 
 	</dependencies>
+<repositories>
+	<repository>
+		<id>repomaven</id>
+		<name>mvnrepository</name>
+		<url>https://dev.lutece.paris.fr/nexus/content/groups/maven_repository/</url>
+<!--		<url>https://mvnrepository.com/</url>-->
+	</repository>
+</repositories>
 
 	<build>
 		<plugins>
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.7.0</version>
+				<version>3.11.0</version>
 				<configuration>
 					<source>1.8</source>
 					<target>1.8</target>
